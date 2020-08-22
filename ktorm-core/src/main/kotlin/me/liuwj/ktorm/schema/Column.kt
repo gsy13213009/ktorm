@@ -132,6 +132,7 @@ data class Column<T : Any>(
      */
     val referenceTable: BaseTable<*>? get() = (binding as? ReferenceBinding)?.referenceTable
 
+    val mapData = HashMap<String, Any>()
     /**
      * Convert this column to a [ColumnExpression].
      */

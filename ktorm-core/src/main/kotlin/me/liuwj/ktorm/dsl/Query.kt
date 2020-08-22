@@ -118,6 +118,9 @@ data class Query(val database: Database, val expression: QueryExpression) {
         }
     }
 
+    var andConditionList = ArrayList<ColumnDeclaring<Boolean>>()
+    var orConditionList = ArrayList<ColumnDeclaring<Boolean>>()
+
     /**
      * Return an iterator over the rows of this query.
      *
